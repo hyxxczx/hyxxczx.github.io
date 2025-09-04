@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>青海省湟源县乡村振兴</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1E88E5',
+                        secondary: '#43A047',
+                        accent: '#FF9800',
+                        dark: '#1A202C',
+                        light: '#F7FAFC'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .transition-custom {
+                transition: all 0.3s ease;
+            }
+            .policy-section {
+                scroll-margin-top: 80px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- 导航栏 -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fa fa-leaf text-secondary text-2xl"></i>
+                <h1 class="text-xl md:text-2xl font-bold text-dark">湟源县乡村振兴</h1>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#home" class="text-gray-700 hover:text-primary transition-custom">首页</a>
+                <a href="#about" class="text-gray-700 hover:text-primary transition-custom">关于湟源</a>
+                <a href="#policy" class="text-gray-700 hover:text-primary transition-custom">政策解读</a>
+                <a href="#employment" class="text-gray-700 hover:text-primary transition-custom">就业帮扶</a>
+                <a href="#transport-subsidy" class="text-gray-700 hover:text-primary transition-custom">交通补助</a>
+                <a href="#medical-insurance" class="text-gray-700 hover:text-primary transition-custom">医保政策</a>
+                <a href="#elderly-subsidy" class="text-gray-700 hover:text-primary transition-custom">高龄补贴</a>
+                <a href="#temporary-assistance" class="text-gray-700 hover:text-primary transition-custom">临时救助</a>
+                <a href="#animal-husbandry" class="text-gray-700 hover:text-primary transition-custom">畜牧业奖补</a>
+                <a href="#contact" class="text-gray-700 hover:text-primary transition-custom">联系我们</a>
+            </nav>
+            <button class="md:hidden text-gray-700 focus:outline-none" id="mobile-menu-button">
+                <i class="fa fa-bars text-xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- 移动端菜单 -->
+    <div class="md:hidden hidden bg-white shadow-lg absolute w-full" id="mobile-menu">
+        <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
+            <a href="#home" class="text-gray-700 hover:text-primary py-2 transition-custom">首页</a>
+            <a href="#about" class="text-gray-700 hover:text-primary py-2 transition-custom">关于湟源</a>
+            <a href="#policy" class="text-gray-700 hover:text-primary py-2 transition-custom">政策解读</a>
+            <a href="#employment" class="text-gray-700 hover:text-primary py-2 transition-custom">就业帮扶</a>
+            <a href="#transport-subsidy" class="text-gray-700 hover:text-primary py-2 transition-custom">交通补助</a>
+            <a href="#medical-insurance" class="text-gray-700 hover:text-primary py-2 transition-custom">医保政策</a>
+            <a href="#elderly-subsidy" class="text-gray-700 hover:text-primary py-2 transition-custom">高龄补贴</a>
+            <a href="#temporary-assistance" class="text-gray-700 hover:text-primary py-2 transition-custom">临时救助</a>
+            <a href="#animal-husbandry" class="text-gray-700 hover:text-primary py-2 transition-custom">畜牧业奖补</a>
+            <a href="#contact" class="text-gray-700 hover:text-primary py-2 transition-custom">联系我们</a>
+        </div>
+    </div>
+
+    <!-- 英雄区域 -->
+    <section id="home" class="relative h-[80vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://picsum.photos/id/1019/1920/1080" alt="青海省湟源县乡村风光" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-dark/50"></div>
+        </div>
+        <div class="container mx-auto px-4 z-10 text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 text-shadow">青海省湟源县乡村振兴</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-shadow">助力乡村发展，共创美好未来</p>
+            <a href="#contact" class="bg-primary hover:bg-primary/90 text-white font-medium py-3 px-8 rounded-lg transition-custom inline-flex items-center">
+                联系我们 <i class="fa fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- 关于湟源 -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">关于湟源县</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <img src="https://picsum.photos/id/1036/800/600" alt="湟源县乡村风貌" class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-dark mb-4">湟源县概况</h3>
+                    <p class="text-gray-700 mb-4">湟源县位于青海省东部，是青藏高原与黄土高原的过渡地带，素有"海藏通衢"、"海藏咽喉"之称。全县总面积1509平方公里，总人口约13万。</p>
+                    <p class="text-gray-700 mb-4">湟源县历史悠久，文化灿烂，是古丝绸南路和唐蕃古道的重要驿站。境内有多处文物古迹和自然景观，具有丰富的旅游资源。</p>
+                    <p class="text-gray-700">近年来，湟源县在乡村振兴战略指引下，大力发展特色农业、生态旅游等产业，推动农村经济社会持续健康发展，农民生活水平不断提高。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 政策解读 -->
+    <section id="policy" class="py-16 bg-gray-50 policy-section">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">政策解读</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">了解湟源县乡村振兴相关政策文件与解读信息</p>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8 max-w-4xl mx-auto">
+                <h3 class="text-2xl font-semibold text-dark mb-6 text-center">雨露计划《湟源县2025年"雨露计划"助学补助工作实施方案》</h3>
+                
+                <p class="text-gray-700 mb-6">根据《青海省农业农村厅关于进一步规范雨露计划助学补助发放工作的通知》（青农函〔2024〕149号）等文件精神，为做好湟源县2025年度脱贫家庭和存在因学致贫风险的监测帮扶对象家庭子女助学补助工作，结合我县实际，制定本方案。</p>
+                
+                <div class="space-y-8">
+                    <!-- 一、时间安排 -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mr-2 flex-shrink-0">一</span>
+                            时间安排
+                        </h4>
+                        <div class="pl-10">
+                            <p class="text-gray-700 mb-3"><span class="font-medium">（一）申报时间。</span>春季学期，于3月10日至5月10日期间组织申报，6月10日前完成审核；秋季学期，于9月10日至11月10日期间组织申报，12月10日前完成审核。</p>
+                            <p class="text-gray-700"><span class="font-medium">（二）补助发放。</span>每学期发放一次助学补助，春季补助、秋季补助分别在每年6月25日前、12月25日前发放到位，做到应发尽发、应补尽补。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 二、补助对象 -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mr-2 flex-shrink-0">二</span>
+                            补助对象
+                        </h4>
+                        <div class="pl-10">
+                            <p class="text-gray-700">"雨露计划"助学补助对象为在全国防止返贫监测和衔接推进乡村振兴信息系统的脱贫家庭（含监测对象）中接受国内职业教育和普通高等教育，且在教育部学籍管理系统或人社部全国技工院校信息管理系统中注册正式学籍的在校生。户口已迁至学校所在地的在校生，同样享受扶持政策。</p>
+                            <p class="text-gray-700 mt-2">职业教育和普通高等教育学校包括全日制的普通中专、成人中专、职业高中、技工学校、高职院校、技师学院、普通大专、普通本科，不含自考本科、成人函授、网络教育和研究生（及以上）阶段。以上学校类型包括公办和民办。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 三、扶持期限 -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mr-2 flex-shrink-0">三</span>
+                            扶持期限
+                        </h4>
+                        <div class="pl-10">
+                            <p class="text-gray-700 mb-2">自2025年春季学期起至2025年秋季学期止，符合条件的脱贫家庭（含监测对象）在校生第一次享受雨露计划助学补助后，在校学习期间持续享受扶持政策。接受中、高等职业教育期间享受雨露计划助学补助，毕业后直接升入全日制高等职业学校或普通高等教育学校继续学习的学生，继续享受该资助政策。</p>
+                            <p class="text-gray-700">新识别认定的监测对象，在校生从正式纳入监测的当学期开始落实补助，若正式纳入监测的时间为寒暑假，则从下一学期开始落实补助。处于岗位实习（离校实习）阶段和休学、服兵役后返校继续学习的，可以继续进行补助申报（休学、服兵役期间不予补助）。执行期间，国家雨露计划助学补助政策有调整的，遵照调整后的政策执行。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 四、补助标准 -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mr-2 flex-shrink-0">四</span>
+                            补助标准
+                        </h4>
+                        <div class="pl-10">
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>本科生每生每学期3000元</li>
+                                <li>高职（大专、技师）生每生每学期2500元</li>
+                                <li>中职（技工）生每生每学期1500元</li>
+                                <li>预科生每生每学期2000元</li>
+                            </ul>
+                            <p class="text-gray-700 mt-2">学生补助金额以当前学期所处学历阶段为补助标准。享受雨露计划助学补助政策的同时，不影响叠加享受国家教育资助政策。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 五、申报审核 -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mr-2 flex-shrink-0">五</span>
+                            申报审核
+                        </h4>
+                        <div class="pl-10 space-y-3">
+                            <p class="text-gray-700"><span class="font-medium">（一）提取名单。</span>农业农村局从防返贫系统查询模块中提取已标注当学期学籍信息学生清单，并组织进行学籍资格和在校状态审核认定，查漏补缺核定学生名单。对系统信息与实际信息不符的情况，以实际学籍证明或在校证明为补充依据。</p>
+                            
+                            <p class="text-gray-700"><span class="font-medium">（二）申报方式。</span>一是学生通过"雨露信易通"微信小程序进行申报。二是没有条件通过微信小程序进行申报或申报系统关闭等特殊情况的，学生可通过提交纸质件的方式逐级进行线下申报。</p>
+                            
+                            <p class="text-gray-700"><span class="font-medium">（三）申报资料。</span>一是学生本人身份证正反面彩色照片或彩色扫描件。二是学信网下载的学生本人当学期学籍验证报告。新入学或中职（技工、中专）等在学信网中无法查询到学籍信息的，提供经学校学籍管理部门填写并盖章的"青海省申报雨露计划助学补助学生学籍证明"。</p>
+                            
+                            <p class="text-gray-700"><span class="font-medium">（四）系统审核。</span>申报期内，农业农村局负责组织申报审核工作，审核程序为学生通过"雨露信易通"提交申请——村级上报——乡级初审——县级审核——村级公示——乡级公示——县级公示——资金划拨。</p>
+                            
+                            <p class="text-gray-700"><span class="font-medium">（五）公示监督。</span>各级公示不少于7日（可同步公示），确定补助名单。公示内容包括户主姓名、学生姓名、家庭住址、学校名称、学历、入学时间、年级、补助金额、监督电话。公示照片一律上传至"雨露信易通"信息系统留存。对群众举报的不符合补助条件的，由农业农村局查实核准后取消补助资格。</p>
+                            
+                            <p class="text-gray-700">对符合补助条件但未在防返贫系统中标注学籍及其他符合补助条件因各种原因错过申请时间的，经村"两委"干部、驻村第一书记、工作队员联合核实后，按上述程序报农业农村局进行人工校正，落实补助政策，确保应补尽补，并在防返贫系统及时标注学籍。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 六、补助方式 -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mr-2 flex-shrink-0">六</span>
+                            补助方式
+                        </h4>
+                        <div class="pl-10">
+                            <p class="text-gray-700">每学期的补助资金由农业农村局通过青海省惠民惠农财政补贴资金"一卡通"平台直接发放到脱贫家庭（含监测对象）。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 七、资金来源 -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mr-2 flex-shrink-0">七</span>
+                            资金来源
+                        </h4>
+                        <div class="pl-10">
+                            <p class="text-gray-700">2025年度"雨露计划"学生补助资金按照2024年秋季补助发放情况预估后列支，主要来源分为两部分，一部分为2024年秋季补助结余资金61.45万元，另一部分为2025年中央财政衔接资金中列支100万元，共计161.45万元。按照应补尽补的原则，若后续有新增监测户家庭符合补助条件学生，申请补助的资金不足部分按照《青海省财政衔接推进乡村振兴补助资金管理办法》（青财农字〔2021〕821号）和《关于〈青海省财政衔接推进乡村振兴补助资金管理办法〉〈青海省衔接推进乡村振兴补助资金绩效评价及考核办法〉有关事项的补充通知》（青财农字〔2023〕568号）要求，分渠道，足额列支补助资金。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 八、工作要求 -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mr-2 flex-shrink-0">八</span>
+                            工作要求
+                        </h4>
+                        <div class="pl-10 space-y-3">
+                            <p class="text-gray-700"><span class="font-medium">（一）加强组织领导，确保实施效果。</span>县教育、财政、人力资源和社会保障、农业农村（乡村振兴）等部门要加强沟通，合力推动工作开展。县农业农村局组织落实雨露计划助学补助政策，负责复核、公示、汇总补助名单，及时录入更新"雨露计划"助学补助信息至防返贫系统。县财政局做好资金保障工作，协助农业农村部门核对雨露计划资金拨付情况。县教育局负责加强政策宣传、信息咨询等服务，落实国家职业教育相关资助政策，加快发展脱贫地区现代职业教育，提高职业教育质量。县人力资源和社会保障局负责加强对所属技工院校的监督管理，保障职业教育教学质量，加强对就业创业工作的组织领导，提供就业帮扶服务。</p>
+                            
+                            <p class="text-gray-700"><span class="font-medium">（二）加强资金监管，确保精准高效。</span>县农业农村局要加强财政衔接推进乡村振兴补助资金的管理监督，严格操作程序，实行公告公示制度。不得违规发放补助或擅自调整补助范围及补助标准。分年度建立专门档案资料备查，自觉接受巡视巡察、纪检监察、审计等部门监管和社会监督。严禁虚报冒领、私分截留、套取挪用助学补助资金。</p>
+                            
+                            <p class="text-gray-700"><span class="font-medium">（三）加强宣传动员，确保应知尽知。</span>村"两委"和驻村工作队要发挥一线组织动员作用，宣传国家政策，引导全县脱贫家庭和监测对象家庭新成长劳动力接受职业教育。初、高中学校要充分发挥宣传动员作用，引导学生选择就读职业教育。采取多种方式特别是新媒体手段宣传"雨露计划"扶持政策，确保惠民惠农政策落地落实。</p>
+                            
+                            <p class="text-gray-700"><span class="font-medium">（四）加强信息录入，确保账实相符。</span>县农业农村局组织各乡镇按要求将助学补助信息及时准确录入全国防返贫监测信息系统"雨露计划+"模块，保证系统录入信息与实际补助情况一致。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 就业帮扶车间补充通知 -->
+    <section id="employment" class="py-16 bg-white policy-section">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">就业帮扶政策</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">关于进一步促进就业帮扶车间(工坊)扩面提效的补充通知</p>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8 max-w-4xl mx-auto border border-gray-100">
+                <h3 class="text-2xl font-semibold text-dark mb-6 text-center">关于进一步促进就业帮扶车间(工坊) 扩面提效的补充通知</h3>
+                
+                <p class="text-gray-700 mb-8">各市(州),县(市、区)乡村振兴局：<br>
+                为支持我省就业帮扶车间(工坊)扩面提质升级，实现高效优质发展，带动更多群众就业增收，进一步巩固拓展脱贫攻坚成果，经研究，现对《关于进一步加强帮扶车间(工坊)规范化建设工作的通知》(青乡振局〔2021〕59号)有关内容补充通知如下。</p>
+                
+                <div class="space-y-8">
+                    <!-- 一、关于认定条件和范围 -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mr-2 flex-shrink-0">一</span>
+                            关于认定条件和范围
+                        </h4>
+                        <div class="pl-10 space-y-4">
+                            <p class="text-gray-700"><span class="font-medium">（一）基本定义。</span>就业帮扶车间(工坊)是指依托当地资源禀赋带动农牧户发展生产，吸纳一定数量的脱贫人口和监测对象就地就近务工就业的生产经营主体。</p>
+                            
+                            <p class="text-gray-700"><span class="font-medium">（二）认定条件。</span>坚持"扶小扶弱、应认尽认"原则，适当调整就业帮扶车间(工坊)相关认定条件。不再要求经营主体持有独立自主的注册商标；不再规定生产经营场地面积大小；"稳定运营2年以上的"变更为"稳定运营1年以上且市场前景好、发展潜力大的"；就业帮扶车间和工坊业人数分别从30人和10人变更为5人和2人；"就业帮扶车间(工坊)吸纳脱贫人口和边缘易致贫人口就业比例30%以上"变更为"吸纳脱贫人口和边缘易致贫人口就业比例10%以上或2人以上"。</p>
+                            
+                            <p class="text-gray-700"><span class="font-medium">（三）认定范围。</span>就业帮扶车间(工坊)的认定范围从民族民间手工业、非遗传承工坊等生产经营主体，扩大到种养业合作社、餐饮业、冷链物流、加工制作、家政服务等生产经营主体。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 二、关于认定程序 -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mr-2 flex-shrink-0">二</span>
+                            关于认定程序
+                        </h4>
+                        <div class="pl-10">
+                            <p class="text-gray-700">进一步简化认定审批流程，经营主体申请、乡镇核查报送、县级审核批复、市州备案。认定时间由每半年1次变更为随时申请、随时审批，要在5个工作日内完成审批手续办理。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 三、关于激励措施 -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mr-2 flex-shrink-0">三</span>
+                            关于激励措施
+                        </h4>
+                        <div class="pl-10">
+                            <p class="text-gray-700">对认定的就业帮扶车间(工坊),各地根据经营状况、规模大小、产业前景、吸纳劳动力数量及务工报酬发放等综合因素考量，按照《关于进一步加强帮扶车间(工坊)规范化建设工作的通知》(青乡振局〔2021〕59号)奖补资金原则上不超过50万元的规定，分档分级落实补助资金。对吸纳脱贫人口务工就业数量多、脱贫人口收入增长较快的就业帮扶车间(工坊)的经营者，要在各类涉企评先评优表彰中予以倾斜。对就业帮扶车间(工坊)工作推动情况，作为一项重要指标纳入年度乡村振兴绩效考核。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 四、有关要求 -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mr-2 flex-shrink-0">四</span>
+                            有关要求
+                        </h4>
+                        <div class="pl-10 space-y-4">
+                            <p class="text-gray-700"><span class="font-medium">（一）集中开展认定。</span>各地对照新的认定标准开展一轮集中认定和清理工作。对符合条件的，按照程序予以认定。对连续停产停工6个月以上且无法恢复经营或带动就业成效不明显的予以清理。集中认定和清理工作由市州乡村振兴部门牵头组织，人社部门配合。认定的帮扶车间(工坊),由省乡村振兴局统一制作发放标识牌。原"乡村振兴车间""扶贫车间"标识牌一律作废，不再悬挂。</p>
+                            
+                            <p class="text-gray-700"><span class="font-medium">（二）加强工作调度。</span>加强对就业帮扶车间(工坊)带动作用和经营管理的日常监测，实行动态管理，常态化开展就业帮扶车间(工坊)和清理认定工作，督促就业帮扶车间(工坊)在季节性、阶段性停工停产15天以上和复工复产后7天内，主动做好报备工作，每月更新台账。</p>
+                            
+                            <p class="text-gray-700"><span class="font-medium">（三）强化管理监督。</span>加大帮扶车间(工坊)安全生产、环境保护、劳动者权益保障等方面的监管力度，确保安全稳定持续发展。各地要确保就业帮扶车间(工坊)补助资金的落实，跟年度衔接资金项目计划统筹考虑，合理安排，纳入项目库管理。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 一次性交通补助政策 -->
+    <section id="transport-subsidy" class="py-16 bg-gray-50 policy-section">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">一次性交通补助政策</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">跨省就业脱贫人口和监测帮扶对象一次性交通补助相关规定</p>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8 max-w-4xl mx-auto border border-gray-100">
+                <h3 class="text-2xl font-semibold text-dark mb-6 text-center">关于做好跨省就业脱贫人口和监测帮扶对象一次性交通补助工作的通知</h3>
+                
+                <p class="text-gray-700 mb-8">为贯彻落实《国家2022年度巩固拓展脱贫攻坚成果同乡村振兴有效衔接考核评估反馈问题整改工作方案》（青办字〔2023〕43号）要求，根据青海省人社厅、财政厅、农业农村厅三部门印发的《关于做好跨省就业脱贫人口和监测帮扶对象一次性交通补助工作的通知》(青人社厅函(2023)204号)的精神，现就做好跨省就业脱贫人口和监测帮扶对象一次性交通补助工作通知如下：</p>
+                
+                <div class="space-y-8">
+                    <!-- 一、补助对象 -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mr-2 flex-shrink-0">一</span>
+                            补助对象
+                        </h4>
+                        <div class="pl-10">
+                            <p class="text-gray-700">赴省外务工就业创业3个月以上的已脱贫人口和防返贫动态监测帮扶对象。其中，监测对象为纳入全国防返贫监测信息系统的脱贫不稳定户、边缘易致贫户和突发严重困难户中的跨省就业人员。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 二、补助标准 -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mr-2 flex-shrink-0">二</span>
+                            补助标准
+                        </h4>
+                        <div class="pl-10">
+                            <p class="text-gray-700">自本文印发之日起，对符合条件的补助对象，当年跨省就业创业累计满3个月即可申请领取1000元的一次性交通补助。一次性交通补助政策每人每年仅限享受一次。所需资金从财政衔接推进乡村振兴补助资金中列支。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 三、工作流程 -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mr-2 flex-shrink-0">三</span>
+                            工作流程
+                        </h4>
+                        <div class="pl-10 space-y-4">
+                            <p class="text-gray-700"><span class="font-medium">（一）确定补助对象。</span>一是通过全国防返贫监测信息系统中的务工监测信息，核查确定补助对象；二是通过基层干部入户走访摸排确定符合条件的补助对象；三是通过农牧户自主申报确定的补助对象。</p>
+                            
+                            <p class="text-gray-700"><span class="font-medium">（二）明确申领材料。</span>申领跨省就业一次性交通补助的脱贫人口或监测帮扶对象应提供外出务工证明，包括：劳动合同（工资发放表）、养老保险缴费凭证、工资银行卡流水等原件或复印件（电子凭证打印件亦可）其中任意一项即可。无法提供上述资料的由用人单位出具证明或村"两委"书面证明并附个人承诺书。跨省外出创业的脱贫人口或监测帮扶对象可提供工商营业执照复印。</p>
+                            
+                            <p class="text-gray-700"><span class="font-medium">（三）严格补助程序。</span>坚持自下而上、逐级上报、逐级审核的原则。一是由村"两委"、第一书记、驻村工作队员等负责收集统计村内跨省务工的脱贫人口和监测帮扶对象信息，确保不漏一人。主动联系对接告知相关政策，收集申领（佐证）材料并进行初审，合格后形成名单连同申领（佐证）材料报乡镇政府；二是乡镇政府汇总名单和申报（佐证）材料后进行复核，并通过防返贫监测信息系统核实人员身份。乡镇复核通过后，立即开展乡镇、村两级同步公示，公示期不少于3天，公示无异议后报县就业局；三是县就业局汇总收集相关材料，于3个工作日内提交县农业农业局，四是县农业农业局于3个工作日完成身份核实，于5个工作日内通过电子发放系统，按规定核准发放次数，将交通补助拨付至农牧户"一卡通"账户，并按月将发放情况通报至各乡镇。五是各乡镇根据通报情况，及时完善防返贫监测信息系统中交通补助和就业帮扶等相关数据，并建立完善档案资料。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 四、工作要求 -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mr-2 flex-shrink-0">四</span>
+                            工作要求
+                        </h4>
+                        <div class="pl-10 space-y-4">
+                            <p class="text-gray-700"><span class="font-medium">（一）加强组织领导。</span>鼓励脱贫人口和监测帮扶对象跨省就业是巩固拓展脱贫攻坚成果，全面推进乡村振兴的重要内容，一次性交通补助涉及群众切身利益，各部门要将跨省务工一次性交通补助发放工作作为脱贫群众转移就业的重点工作，加强组织领导，及时安排部署，紧盯工作进度，推进工作落实。</p>
+                            
+                            <p class="text-gray-700"><span class="font-medium">（二）加强督导检查。</span>各乡镇要认真履行职责，加强督导检查，切实摸清人员底数，杜绝形式主义，确保"应补尽补"。</p>
+                            
+                            <p class="text-gray-700"><span class="font-medium">（三）做好风险防控。</span>要切实加强日常财会监督，规范资金实摸清人员底数，杜绝形式主义，确保"应补尽补"。</p>
+                            
+                            <p class="text-gray-700"><span class="font-medium">（四）做好风险防控。</span>要切实加强日常财会监督，规范资金管理使用，严格履行程序规定，健全风险防控机制，严肃查处骗取套取、虚报冒领等违法违规行为，坚决杜绝"漏补""错补"等问题，确保补助资金发放及时准确。</p>
+                            
+                            <p class="text-gray-700"><span class="font-medium">（五）强化宣传引导。</span>县乡有关部门要采取多种方式加强政策宣传，利用各类媒体平台、公共就业服务机构和驻村工作队以及村"公示栏"等，大力宣传促进脱贫人口和监测帮扶对象就业创业优惠政策和服务举措，引导群众广泛参与，提高政策知晓度和满意度。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="text-gray-700 italic pl-10">
+                        本文自发布之日起实施，实施期限截止2025年12月31日。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 基本医疗保险报销比例标准 -->
+    <section id="medical-insurance" class="py-16 bg-white policy-section">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">基本医疗保险报销比例标准</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">完善统一的城乡居民基本医疗保险制度，保障居民医疗需求</p>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8 max-w-4xl mx-auto border border-gray-100">
+                <div class="space-y-8">
+                    <p class="text-gray-700 mb-6">为完善统一的城乡居民基本医疗保险制度，湟源县巩固住院待遇保障水平，具体报销比例标准如下：</p>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h4 class="text-xl font-semibold text-primary mb-4">医疗保险报销比例标准</h4>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-secondary mt-1 mr-3"></i>
+                                <div>
+                                    <span class="font-medium text-dark">住院医疗费用：</span>
+                                    <span class="text-gray-700">城乡居民政策范围内的住院医疗费用报销比例稳定在70%以上</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-secondary mt-1 mr-3"></i>
+                                <div>
+                                    <span class="font-medium text-dark">"两病"药品费用：</span>
+                                    <span class="text-gray-700">"两病"（高血压、糖尿病）政策范围内的药品费用报销比例稳定在50%以上</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-secondary mt-1 mr-3"></i>
+                                <div>
+                                    <span class="font-medium text-dark">门诊特殊病慢性病费用：</span>
+                                    <span class="text-gray-700">基本医疗保险门诊特殊病慢性病政策范围内的医疗费用报销比例稳定在50%以上</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <p class="text-gray-700">以上政策旨在进一步减轻城乡居民医疗负担，提高医疗保障水平，确保群众能够看得起病、看得好病，防止因病致贫、因病返贫。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 高龄补贴政策 -->
+    <section id="elderly-subsidy" class="py-16 bg-gray-50 policy-section">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">高龄补贴政策</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">保障高龄老年人基本生活，提高老年人生活质量</p>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8 max-w-4xl mx-auto border border-gray-100">
+                <div class="space-y-8">
+                    <p class="text-gray-700 mb-6">为保障高龄老年人的基本生活，提高老年人的生活质量，湟源县实行高龄补贴政策，具体标准如下：</p>
+                    
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full bg-white border border-gray-200">
+                            <thead>
+                                <tr class="bg-gray-100">
+                                    <th class="py-3 px-4 border-b text-left text-gray-700 font-semibold">年龄范围</th>
+                                    <th class="py-3 px-4 border-b text-left text-gray-700 font-semibold">补贴标准（每人每月）</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="py-3 px-4 border-b text-gray-700">70～79周岁</td>
+                                    <td class="py-3 px-4 border-b text-gray-700">110元</td>
+                                </tr>
+                                <tr class="bg-gray-50">
+                                    <td class="py-3 px-4 border-b text-gray-700">80～89周岁</td>
+                                    <td class="py-3 px-4 border-b text-gray-700">120元</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4 border-b text-gray-700">90～99周岁</td>
+                                    <td class="py-3 px-4 border-b text-gray-700">140元</td>
+                                </tr>
+                                <tr class="bg-gray-50">
+                                    <td class="py-3 px-4 text-gray-700">100周岁及以上</td>
+                                    <td class="py-3 px-4 text-gray-700">180元</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h4 class="text-lg font-semibold text-primary mb-3">补贴调整机制</h4>
+                        <p class="text-gray-700">省上建立高龄补贴标准调整机制，根据全省经济发展程度，对高龄补贴标准适当调整，并及时公布调整后的高龄补贴标准。确保高龄补贴水平与经济社会发展水平相适应，切实保障老年人的基本生活需求。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 临时救助政策 -->
+    <section id="temporary-assistance" class="py-16 bg-white policy-section">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">临时救助政策</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">为遭遇突发事件、意外伤害等特殊困难家庭提供临时救助</p>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8 max-w-4xl mx-auto border border-gray-100">
+                <div class="space-y-8">
+                    <p class="text-gray-700 mb-6">临时救助是针对遭遇突发事件、意外伤害、重大疾病或其他特殊原因导致基本生活陷入困境，其他社会救助制度暂时无法覆盖或救助之后基本生活暂时仍有严重困难的家庭或个人给予的应急性、过渡性的救助。</p>
+                    
+                    <!-- 一、急难型救助对象 -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mr-2 flex-shrink-0">一</span>
+                            急难型救助对象
+                        </h4>
+                        <div class="pl-10">
+                            <p class="text-gray-700">因火灾、交通事故等意外事件，家庭成员突发重大疾病及遭遇其他特殊困难等原因，导致基本生活暂时出现严重困难、需要立即采取救助措施的家庭或个人。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 二、支出型救助对象 -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mr-2 flex-shrink-0">二</span>
+                            支出型救助对象
+                        </h4>
+                        <div class="pl-10">
+                            <p class="text-gray-700">指特困供养人员、最低生活保障家庭、最低生活保障边缘家庭、刚性支出困难家庭、孤儿、艾滋病儿童、事实无人抚养儿童、防止返贫监测对象和其他支出型救助对象，因病、因学、因住房等造成的支出，导致基本生活在一定时期内出现严重困难的家庭或个人。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 三、临时救助的方式 -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mr-2 flex-shrink-0">三</span>
+                            临时救助的方式
+                        </h4>
+                        <div class="pl-10">
+                            <p class="text-gray-700 mb-3">临时救助的方式包括：发放临时救助金、发放实物和提供转介服务。具体实施原则如下：</p>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2 pl-4">
+                                <li>以发放救助金为主，这是临时救助的主要方式，方便救助对象根据自身需求自主安排使用</li>
+                                <li>发放实物为辅，在救助对象因特殊情况无法自行购买基本生活必需品时提供</li>
+                                <li>提供转介服务为补充，对需要长期帮扶的对象，转介给相关部门提供持续帮扶</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 湟源县畜牧业高质量发展奖补方案 -->
+    <section id="animal-husbandry" class="py-16 bg-gray-50 policy-section">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">畜牧业高质量发展奖补方案</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">推动绿色有机农畜产品输出地建设，促进畜牧业高质量发展</p>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8 max-w-5xl mx-auto border border-gray-100">
+                <h3 class="text-2xl font-semibold text-dark mb-6 text-center">湟源县畜牧业高质量发展推动绿色有机农畜产品输出地建设奖补方案</h3>
+                
+                <p class="text-gray-700 mb-8">为深入贯彻中央、省市关于畜牧业生产工作的各项决策部署，聚焦产业发展核心，积极引导养殖、屠宰、加工、销售等畜牧业经营主体，加大牛羊猪出栏补栏力度、提高牛羊屠宰规模、鼓励精深加工、拓展产品销售渠道，做好产销衔接，进一步稳定牛羊肉产品市场供应，增加畜牧业产值和农牧民收入，全力推动畜牧业高质量发展，助力乡村振兴和绿色有机农畜产品输出地示范县建设，促进全县畜牧业生产稳步向前发展。根据《青海省农业农村厅等部门印发<关于青海省稳定牛羊及奶产业发展十项措施的通知>》（青农牧〔2024〕242号）、《西宁市农业农村局<关于进一步做好畜牧业发展奖补工作的通知>》（宁农〔2025〕31号）等文件精神，结合我县畜牧业生产实际，制定本奖补方案。</p>
+                
+                <div class="space-y-8">
+                    <!-- 一、奖补原则 -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mr-2 flex-shrink-0">一</span>
+                            奖补原则
+                        </h4>
+                        <div class="pl-10 space-y-3">
+                            <p class="text-gray-700"><span class="font-medium">（一）坚持"以出促补、精准奖补"的原则。</span>严格按照审核确认的对象和数量，精准发放奖补资金，确保所有符合条件的畜牧业经营主体都能享受奖补政策。</p>
+                            
+                            <p class="text-gray-700"><span class="font-medium">（二）坚持"先报先补，补完即止"的原则。</span>按照申报时间先后顺序发放奖补资金，谁先申报谁先受益，奖完为止。各类奖补资金可调剂使用。</p>
+                            
+                            <p class="text-gray-700"><span class="font-medium">（三）坚持"统筹成效、分类奖补"的原则。</span>脱贫（监测）户的牛羊猪出栏补栏奖补按《湟源县脱贫（监测）户养殖生产奖补项目实施方案》执行。销往省外的肉食品奖补不得与湟源县消费协作提升项目重复享受。</p>
+                            
+                            <p class="text-gray-700"><span class="font-medium">（四）坚持"公平公正、公开规范"的原则。</span>对奖补范围、奖补标准、奖补金额等信息进行公开公示，做到奖补政策全程透明，接受社会监督，确保奖补政策规范实施。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 二、实施内容 -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mr-2 flex-shrink-0">二</span>
+                            实施内容
+                        </h4>
+                        <div class="pl-10 space-y-6">
+                            <p class="text-gray-700"><span class="font-medium">（一）奖补对象。</span>县域内登记造册并诚信经营的养殖企业、专业合作社、家庭农牧场以及具有当地户籍的养殖户（以下简称养殖主体）；县域内定点屠宰企业、肉类加工企业；在县域内定点屠宰企业进行屠宰的养殖企业、专业合作社、养殖户、经纪人。</p>
+                            
+                            <p class="text-gray-700"><span class="font-medium">（二）资金来源。</span>奖补资金共计1049万元，其中市级财政资金249万元，县级财政资金800万元。</p>
+                            
+                            <p class="text-gray-700"><span class="font-medium">（三）资金分配。</span>县财政局拨付500万元奖补资金至县农业农村局，由县农业农村局实施奖补；拨付300万元奖补资金至大华工业园区管委会，由大华工业园区管委会实施奖补。市级资金249万元统筹至县级奖补资金范畴，由县农业农村局实施奖补。</p>
+                            
+                            <div>
+                                <p class="text-gray-700 mb-3"><span class="font-medium">（四）奖补类型及标准</span></p>
+                                
+                                <div class="space-y-6 pl-4">
+                                    <p class="text-gray-700"><span class="font-medium">1. 牛羊猪出栏奖补标准（市级资金119万元、县级资金380万元）。</span>为激发养殖积极性，扩大养殖规模，提升产业整体产能，对在县域内养殖超过三个月，进行屠宰或出栏至县域外的牛羊猪实施奖补，按牛600元/头、羊300元/只、猪300元/头的标准进行奖补（原则每个养殖主体奖补资金不超过3000元，一次性出栏牛30头、羊100只、猪20头以上的每个养殖主体奖补资金6000元）。</p>
+                                    
+                                    <p class="text-gray-700"><span class="font-medium">2. 牛羊猪补栏奖补标准（市级资金130万元）。</span>为进一步激发养殖户补栏积极性，促进畜牧业有序良性循环，对西宁市市域外引进能繁母牛、母羊的养殖主体，按牛400元/头、羊200元/只实施奖补；对西宁市市域外一次性引进10头以上后备母猪的养殖主体，按200元/头实施奖补。（原则每个养殖主体奖补资金不超过2000元）。</p>
+                                    
+                                    <p class="text-gray-700"><span class="font-medium">3. 能繁母猪养殖奖补标准（县级资金20万元）。</span>为稳定生猪产能，应对市场波动，对全县养殖主体现饲养的经产能繁母猪实施奖补，按一般户200元/头、脱贫（监测）户300元/头的标准进行奖补。</p>
+                                    
+                                    <div>
+                                        <p class="text-gray-700 mb-3"><span class="font-medium">4. 牛羊屠宰奖补标准（县级资金100万元）。</span></p>
+                                        <p class="text-gray-700 mb-3">一是对县域内的定点屠宰企业按畜种和屠宰数量实施梯度奖补：</p>
+                                        <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4 pl-4">
+                                            <li>牛屠宰量不超过2万头的不予奖补；2万头以上且不超过3万头的部分，按5元/头奖补；3万头以上且不超过4万头的部分，按10元/头奖补；4万头以上的部分，按15元/头奖补。</li>
+                                            <li>羊屠宰量不超过1万只的不予奖补；1万只以上且不超过5万只的部分，按1元/只奖补；5万只以上且不超过10万只的部分，按2元/只奖补；10万只以上的部分按5元/只奖补。</li>
+                                            <li>每家屠宰企业奖补金额累计不超过35万元。</li>
+                                        </ul>
+                                        
+                                        <p class="text-gray-700 mb-3">二是对县域内定点屠宰企业进行屠宰的养殖企业、专业合作社、牛羊肉销售经纪人实施奖补：</p>
+                                        <ul class="list-disc list-inside text-gray-700 space-y-2 pl-4">
+                                            <li>按牛5元/头、羊1元/只的标准进行奖补。</li>
+                                        </ul>
+                                        
+                                        <div class="mt-4 overflow-x-auto">
+                                            <table class="min-w-full bg-white border border-gray-200">
+                                                <thead>
+                                                    <tr class="bg-gray-100">
+                                                        <th class="py-2 px-3 border-b text-left text-sm text-gray-700 font-semibold">屠宰畜种</th>
+                                                        <th class="py-2 px-3 border-b text-left text-sm text-gray-700 font-semibold">屠宰量（万头只）</th>
+                                                        <th class="py-2 px-3 border-b text-left text-sm text-gray-700 font-semibold">奖补标准</th>
+                                                        <th class="py-2 px-3 border-b text-left text-sm text-gray-700 font-semibold">备注</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700" rowspan="4">牛</td>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">屠宰量≤2</td>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">0</td>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700"></td>
+                                                    </tr>
+                                                    <tr class="bg-gray-50">
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">2<屠宰量≤3</td>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">5元/头</td>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">超出2万头的部分</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">3<屠宰量≤4</td>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">10元/头</td>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">超出3万头的部分</td>
+                                                    </tr>
+                                                    <tr class="bg-gray-50">
+                                                        <td class="py-2 px-3 text-sm text-gray-700">屠宰量>4</td>
+                                                        <td class="py-2 px-3 text-sm text-gray-700">15元/头</td>
+                                                        <td class="py-2 px-3 text-sm text-gray-700">超出4万头的部分</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700" rowspan="4">羊</td>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">屠宰量≤1</td>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">0</td>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700"></td>
+                                                    </tr>
+                                                    <tr class="bg-gray-50">
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">1<屠宰量≤5</td>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">1元/只</td>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">超出1万只的部分</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">5<屠宰量≤10</td>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">2元/只</td>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">超出5万只的部分</td>
+                                                    </tr>
+                                                    <tr class="bg-gray-50">
+                                                        <td class="py-2 px-3 text-sm text-gray-700">屠宰量>10</td>
+                                                        <td class="py-2 px-3 text-sm text-gray-700">5元/只</td>
+                                                        <td class="py-2 px-3 text-sm text-gray-700">超出10万只的部分</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <p class="text-gray-700 mb-3"><span class="font-medium">5. 肉食品加工企业奖补标准（县级资金300万元）。</span></p>
+                                        
+                                        <p class="text-gray-700 mb-3">一是对肉食品加工企业2024年度按照《增值税及附加税费申报表》上销售总额的2%予以奖补，每家肉食品加工企业奖补金额不超过20万元。2025年度按照《增值税及附加税费申报表》上销售总额较上一年度有所增长的企业，按照销售总额增长幅度设置阶梯式奖补，其中，增长幅度不超过20%，不予以奖补，超过20%且不超过50%，一次性予以5万元奖补；超过50%且不超过100%，一次性予以10万元奖补；超过100%且不超过300%，一次性予以20万元奖补；超过300%，一次性予以40万元奖补。</p>
+                                        
+                                        <p class="text-gray-700 mb-3">二是对购买本县定点屠宰企业的牛羊肉用于生产的肉食品加工企业按照购买金额占销售总额比例进行奖补，其中，占比不超过30%的，一次性予以5万元奖补，占比超过30%的，一次性予以10万元奖补。</p>
+                                        
+                                        <p class="text-gray-700 mb-3">三是对2025年新引进肉食品加工企业按照本年度企业完成投资总额设置阶梯式奖补，其中，入统固定资产投资超过100万元且不超过500万元，一次性予以10万元奖补；超过500万元且不超过1000万元，一次性予以20万元奖补；超过1000万元且不超过2000万元，一次性予以30万元奖补；超过2000万元，一次性予以50万元奖补。</p>
+                                        
+                                        <p class="text-gray-700 mb-3">四是对2025年研发并成功上市的新产品按照500元/个进行奖补。</p>
+                                        
+                                        <div class="mt-4 overflow-x-auto">
+                                            <table class="min-w-full bg-white border border-gray-200">
+                                                <thead>
+                                                    <tr class="bg-gray-100">
+                                                        <th class="py-2 px-3 border-b text-left text-sm text-gray-700 font-semibold" colspan="2">奖补项</th>
+                                                        <th class="py-2 px-3 border-b text-left text-sm text-gray-700 font-semibold">奖补标准</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700" rowspan="6">销售额</td>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700" colspan="2">2024年度按照纳税申报表上销售总额的 2%予以奖补，每家肉食品加工企业奖补金额不超过20万元。</td>
+                                                    </tr>
+                                                    <tr class="bg-gray-50">
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">2025年较2024年销售总额增长幅度（%）</td>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">奖补金额（万元）</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">增长幅度≤20%</td>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">0</td>
+                                                    </tr>
+                                                    <tr class="bg-gray-50">
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">20%<增长幅度≤50%</td>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">50%<增长幅度≤100%</td>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">10</td>
+                                                    </tr>
+                                                    <tr class="bg-gray-50">
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">100%<增长幅度≤300%</td>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">20</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700"></td>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">增长幅度＞300%</td>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">40</td>
+                                                    </tr>
+                                                    <tr class="bg-gray-50">
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700" rowspan="3">购买本县定点屠宰企业的牛羊肉</td>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">购买牛羊肉金额占销售总额比例（%）</td>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">奖补金额（万元）</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">占比≤30%</td>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">5</td>
+                                                    </tr>
+                                                    <tr class="bg-gray-50">
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">占比＞30%</td>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700" rowspan="5">新引进企业</td>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">入统固定资产投资总额（万元）</td>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">奖补金额（万元）</td>
+                                                    </tr>
+                                                    <tr class="bg-gray-50">
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">100<入统固定资产投资总额≤500</td>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">500<入统固定资产投资总额≤1000</td>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">20</td>
+                                                    </tr>
+                                                    <tr class="bg-gray-50">
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">1000<入统固定资产投资总额≤2000</td>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">30</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">入统固定资产投资总额＞2000</td>
+                                                        <td class="py-2 px-3 border-b text-sm text-gray-700">50</td>
+                                                    </tr>
+                                                    <tr class="bg-gray-50">
+                                                        <td class="py-2 px-3 text-sm text-gray-700" colspan="2">新产品研发</td>
+                                                        <td class="py-2 px-3 text-sm text-gray-700">按照500元/个进行奖补</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    
+                                    <p class="text-gray-700"><span class="font-medium">（五）奖补时间</span><br>
+                                    2025年1月1日至奖补资金补完为止。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 三、实施流程 -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mr-2 flex-shrink-0">三</span>
+                            实施流程
+                        </h4>
+                        <div class="pl-10 space-y-6">
+                            <div>
+                                <p class="text-gray-700 mb-3"><span class="font-medium">（一）牛羊猪出栏、能繁母猪养殖奖补流程</span></p>
+                                <p class="text-gray-700 mb-3">严格采取"主体申请、村委核验、乡（镇）审核、专班复核"的方式开展，核验合格后拨付奖补资金。</p>
+                                <ol class="list-decimal list-inside text-gray-700 space-y-2 pl-4">
+                                    <li>主体申请。达到牛羊猪出栏、能繁母猪养殖奖补条件的养殖主体主动向所在地村委会提出奖补申请，并提交相关资料。</li>
+                                    <li>村委核验。村委会根据养殖主体提交的申请，入场入户进行现场核验，并将牛羊猪出栏、能繁母猪养殖奖补申请审核表及相关资料签字盖章后报送至乡（镇）人民政府。</li>
+                                    <li>乡（镇）审核。乡（镇）人民政府对村委会提交的奖补名单及相关资料进行审核，审核通过后在所在地乡（镇）、村委进行公示，公示期不少于5个工作日，无异议后将牛羊猪出栏、能繁母猪养殖奖补申请统计表签字盖章后报送至湟源县畜牧业高质量发展推动绿色有机农畜产品输出地建设奖补工作办公室（以下简称"专班办公室"）。</li>
+                                    <li>专班复核。专班办公室组织人员对乡（镇）人民政府提交的名单及相关资料进行复核，对申报主体进行抽查，抽查比例不少于10%，并填写牛羊猪出栏、能繁母猪养殖奖补复核抽查表。</li>
+                                </ol>
+                            </div>
+                            
+                            <div>
+                                <p class="text-gray-700 mb-3"><span class="font-medium">（二）牛羊猪补栏奖补流程</span></p>
+                                <ol class="list-decimal list-inside text-gray-700 space-y-2 pl-4">
+                                    <li>主体申请。达到牛羊猪补栏奖补条件的养殖主体主动向所在地村委会提出奖补申请，并提交相关资料。</li>
+                                    <li>村委核验。村委会根据养殖主体提交的申请，会同乡（镇）畜牧兽医站工作人员入场入户进行现场核验，并将牛羊猪补栏奖补申请审核表及相关资料签字盖章后报送至乡（镇）人民政府。</li>
+                                    <li>乡（镇）审核。乡（镇）人民政府对村委会提交的奖补名单及相关资料进行审核，审核通过后在所在地乡（镇）、村委进行公示，公示期不少于5个工作日，无异议后将牛羊猪补栏奖补申请统计表签字盖章后报送至专班办公室。</li>
+                                    <li>专班复核。专班办公室组织人员对乡（镇）人民政府提交的名单及相关资料进行复核，对申报主体进行抽查，抽查比例不少于10%，并填写牛羊猪补栏奖补复核抽查表。</li>
+                                </ol>
+                            </div>
+                            
+                            <div>
+                                <p class="text-gray-700 mb-3"><span class="font-medium">（三）牛羊屠宰奖补流程</span></p>
+                                <p class="text-gray-700 mb-3">1. 县内定点屠宰企业奖补流程</p>
+                                <ol class="list-decimal list-inside text-gray-700 space-y-2 pl-4 mb-4">
+                                    <li>企业申请。屠宰企业每2个月向专班办公室提出奖补申请，并提交相关资料。</li>
+                                    <li>专班审核。专班办公室组织人员对屠宰企业申报资料的完整性、规范性、真实性进行审核，并通过屠宰动物入场记录、屠宰台账等核查屠宰数量，确定奖补金额。</li>
+                                </ol>
+                                
+                                <p class="text-gray-700 mb-3">2. 县域内定点屠宰企业进行屠宰的养殖主体、经纪人奖补流程</p>
+                                <ol class="list-decimal list-inside text-gray-700 space-y-2 pl-4">
+                                    <li>养殖主体、经纪人申请。每月主动向专班办公室提出奖补申请，并提交相关资料。</li>
+                                    <li>专班审核。专班办公室组织人员对养殖主体、经纪人申报资料的完整性、规范性、真实性进行审核，并通过动物检疫证明、屠宰台账等核查屠宰数量，确定奖补金额。</li>
+                                </ol>
+                            </div>
+                            
+                            <div>
+                                <p class="text-gray-700 mb-3"><span class="font-medium">（四）肉食品加工企业奖补流程</span></p>
+                                <ol class="list-decimal list-inside text-gray-700 space-y-2 pl-4">
+                                    <li>企业申请。肉食品加工企业及时向大华工业园区管委会提出奖补申请，并提交相关申报资料。</li>
+                                    <li>园区审核。大华工业园区管委会工作人员对肉食品加工企业申报资料的完整性、规范性、真实性进行审核，通过《增值税及附加税费申报表》、增值税专用发票等买卖双方交易凭证、固定资产入统数据表、新产品影像资料等核查销售额、购买牛羊肉金额、固定资产入统数额、新产品研发数量，确定奖补金额。</li>
+                                    <li>上报专班。大华工业园区管委会将肉食品加工企业奖补申请表、相关申报资料报送至专班办公室进行备案。</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 四、奖补资金发放 -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mr-2 flex-shrink-0">四</span>
+                            奖补资金发放
+                        </h4>
+                        <div class="pl-10">
+                            <p class="text-gray-700">专班办公室对核查数据进行汇总，将拟奖补情况在全县范围内公示，公示期满且无异议后发放奖补资金。对养殖、屠宰、肉食品加工企业的奖补资金拨付到企业对公账户，对养殖个体、经纪人的奖补资金以"一卡通"的方式发放。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 五、保障措施 -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mr-2 flex-shrink-0">五</span>
+                            保障措施
+                        </h4>
+                        <div class="pl-10 space-y-4">
+                            <p class="text-gray-700"><span class="font-medium">（一）健全工作机制。</span>为加强奖补过程的管理，顺利推进各项工作，成立以主管县长为组长，财政局、农业农村局局长为副组长，各乡（镇）人民政府、发改局、统计局、审计局、大华工业园区管委会相关负责人为成员的畜牧业高质量发展推动绿色有机农畜产品输出地建设奖补工作专班办公室。专班办公室设在农业农村局，主要负责奖补的日常工作事务。建立评估机制，对奖补效果进行全面评估，并依据评估结果对奖补方案作出优化调整。</p>
+                            
+                            <p class="text-gray-700"><span class="font-medium">（二）加强政策宣传。</span>各乡（镇）、相关部门要采取多种形式进行广泛宣传，对奖补对象、奖补标准、奖补流程等内容进行解读，提高群众的知晓率和参与度，实现应补尽补，确保奖补政策精准落实见效。</p>
+                            
+                            <p class="text-gray-700"><span class="font-medium">（三）强化资金管控。</span>严格奖补流程，严管奖补资金，接受社会和群众监督，遵循"核查完成一批、验收合格一批，资金兑付一批"的原则。专班办公室对奖补资金利用情况进行不定期检查，坚决杜绝违法违规、虚报冒领等行为，一经查实，立即追回奖补资金，并取消该主体年度奖补资金申报资格。本方案实施期间，由审计局对奖补资金的使用情况进行专项审计，确保资金的安全性和合规性。</p>
+                            
+                            <p class="text-gray-700"><span class="font-medium">（四）严肃工作纪律。</span>审核验收工作要做到公开、公正、透明，严禁工作人员徇私舞弊、优亲厚友、违规操作、吃拿卡要，对在实施畜牧业高质量发展推动绿色有机农畜产品输出地建设奖补工作中出现的各种违纪违法行为给予严肃处理。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="text-gray-700 italic pl-10">
+                        本奖补方案由湟源县农业农村局负责解释。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">联系我们</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">如果您对湟源县乡村振兴工作有任何疑问或建议，欢迎与我们联系</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold text-dark mb-6">联系方式</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 p-3 rounded-full mr-4">
+                                <i class="fa fa-map-marker text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-dark mb-1">地址</h4>
+                                <p class="text-gray-600">黄嘉路4号湟源县农业农村局</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 p-3 rounded-full mr-4">
+                                <i class="fa fa-user text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-dark mb-1">联系人</h4>
+                                <p class="text-gray-600">杨静凌</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 p-3 rounded-full mr-4">
+                                <i class="fa fa-phone text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-dark mb-1">联系电话</h4>
+                                <p class="text-gray-600">2432584</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 p-3 rounded-full mr-4">
+                                <i class="fa fa-envelope text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-dark mb-1">电子邮箱</h4>
+                                <p class="text-gray-600">hyxfpbgs@163.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-medium text-dark mb-3">关注我们</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-primary/10 hover:bg-primary/20 text-primary w-10 h-10 rounded-full flex items-center justify-center transition-custom">
+                                <i class="fa fa-weixin"></i>
+                            </a>
+                            <a href="#" class="bg-primary/10 hover:bg-primary/20 text-primary w-10 h-10 rounded-full flex items-center justify-center transition-custom">
+                                <i class="fa fa-weibo"></i>
+                            </a>
+                            <a href="#" class="bg-primary/10 hover:bg-primary/20 text-primary w-10 h-10 rounded-full flex items-center justify-center transition-custom">
+                                <i class="fa fa-youtube-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold text-dark mb-6">留言咨询</h3>
+                    
+                    <form>
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 mb-2">姓名</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary" placeholder="请输入您的姓名">
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="phone" class="block text-gray-700 mb-2">电话</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary" placeholder="请输入您的联系电话">
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 mb-2">电子邮箱</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary" placeholder="请输入您的电子邮箱">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 mb-2">留言内容</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary" placeholder="请输入您的留言内容"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-primary hover:bg-primary/90 text-white font-medium py-3 px-6 rounded-lg transition-custom">
+                            提交留言
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fa fa-leaf text-secondary text-2xl"></i>
+                        <h3 class="text-xl font-bold">湟源县乡村振兴</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">致力于推动湟源县乡村经济社会发展，改善农村人居环境，提高农民生活水平。</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-custom">
+                            <i class="fa fa-weixin"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-custom">
+                            <i class="fa fa-weibo"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-custom">
+                            <i class="fa fa-youtube-play"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">快速链接</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition-custom">首页</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-custom">关于湟源</a></li>
+                        <li><a href="#policy" class="text-gray-400 hover:text-white transition-custom">政策解读</a></li>
+                        <li><a href="#employment" class="text-gray-400 hover:text-white transition-custom">就业帮扶</a></li>
+                        <li><a href="#transport-subsidy" class="text-gray-400 hover:text-white transition-custom">交通补助</a></li>
+                        <li><a href="#medical-insurance" class="text-gray-400 hover:text-white transition-custom">医保政策</a></li>
+                        <li><a href="#elderly-subsidy" class="text-gray-400 hover:text-white transition-custom">高龄补贴</a></li>
+                        <li><a href="#temporary-assistance" class="text-gray-400 hover:text-white transition-custom">临时救助</a></li>
+                        <li><a href="#animal-husbandry" class="text-gray-400 hover:text-white transition-custom">畜牧业奖补</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-custom">联系我们</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">相关政策</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-custom">乡村振兴战略规划</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-custom">农业农村发展政策</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-custom">农村产业扶持政策</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-custom">农村人居环境整治</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-custom">乡村旅游发展规划</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">联系信息</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fa fa-map-marker text-gray-400 mt-1 mr-3"></i>
+                            <span class="text-gray-400">湟源县农业农村局</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-user text-gray-400 mr-3"></i>
+                            <span class="text-gray-400">杨静凌</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-phone text-gray-400 mr-3"></i>
+                            <span class="text-gray-400">2432584</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-envelope text-gray-400 mr-3"></i>
+                            <span class="text-gray-400">hyxfpbgs@163.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500">
+                <p>© 2025 青海省湟源县乡村振兴局 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-custom z-50">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // 移动端菜单切换
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // 返回顶部按钮
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    // 关闭移动端菜单
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                    
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
