@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高龄补贴 - 二级页面</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+
+      <!-- 导航栏 -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fa fa-leaf text-secondary text-2xl"></i>
+                <h1 class="text-xl md:text-2xl font-bold text-dark">湟源县乡村振兴</h1>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="../index.html" class="text-gray-700 hover:text-primary transition-custom">首页</a>
+                <a href="../index.html" class="text-gray-700 hover:text-primary transition-custom">关于湟源</a>
+                <a href="../index.html" class="text-gray-700 hover:text-primary transition-custom">联系我们</a>
+            </nav>
+            <button class="md:hidden text-gray-700 focus:outline-none" id="mobile-menu-button">
+                <i class="fa fa-bars text-xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- 移动端菜单 -->
+    <div class="md:hidden hidden bg-white shadow-lg absolute w-full" id="mobile-menu">
+        <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
+            <a href="../index.html" class="text-gray-700 hover:text-primary py-2 transition-custom">首页</a>
+            <a href="../index.html" class="text-gray-700 hover:text-primary py-2 transition-custom">关于湟源</a>
+            <a href="../index.html" class="text-gray-700 hover:text-primary py-2 transition-custom">联系我们</a>
+        </div>
+    </div>
+
+    <!-- 高龄补贴政策 -->
+    <section id="elderly-subsidy" class="py-16 bg-gray-50 policy-section">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">高龄补贴政策</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">保障高龄老年人基本生活，提高老年人生活质量</p>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8 max-w-4xl mx-auto border border-gray-100">
+                <div class="space-y-8">
+                    <p class="text-gray-700 mb-6">为保障高龄老年人的基本生活，提高老年人的生活质量，湟源县实行高龄补贴政策，具体标准如下：</p>
+                    
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full bg-white border border-gray-200">
+                            <thead>
+                                <tr class="bg-gray-100">
+                                    <th class="py-3 px-4 border-b text-left text-gray-700 font-semibold">年龄范围</th>
+                                    <th class="py-3 px-4 border-b text-left text-gray-700 font-semibold">补贴标准（每人每月）</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="py-3 px-4 border-b text-gray-700">70～79周岁</td>
+                                    <td class="py-3 px-4 border-b text-gray-700">110元</td>
+                                </tr>
+                                <tr class="bg-gray-50">
+                                    <td class="py-3 px-4 border-b text-gray-700">80～89周岁</td>
+                                    <td class="py-3 px-4 border-b text-gray-700">120元</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4 border-b text-gray-700">90～99周岁</td>
+                                    <td class="py-3 px-4 border-b text-gray-700">140元</td>
+                                </tr>
+                                <tr class="bg-gray-50">
+                                    <td class="py-3 px-4 text-gray-700">100周岁及以上</td>
+                                    <td class="py-3 px-4 text-gray-700">180元</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h4 class="text-lg font-semibold text-primary mb-3">补贴调整机制</h4>
+                        <p class="text-gray-700">省上建立高龄补贴标准调整机制，根据全省经济发展程度，对高龄补贴标准适当调整，并及时公布调整后的高龄补贴标准。确保高龄补贴水平与经济社会发展水平相适应，切实保障老年人的基本生活需求。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>民政政策 - 二级页面</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+
+      <!-- 导航栏 -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fa fa-leaf text-secondary text-2xl"></i>
+                <h1 class="text-xl md:text-2xl font-bold text-dark">湟源县乡村振兴</h1>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="../index.html" class="text-gray-700 hover:text-primary transition-custom">首页</a>
+                <a href="../index.html" class="text-gray-700 hover:text-primary transition-custom">关于湟源</a>
+                <a href="../index.html" class="text-gray-700 hover:text-primary transition-custom">联系我们</a>
+            </nav>
+            <button class="md:hidden text-gray-700 focus:outline-none" id="mobile-menu-button">
+                <i class="fa fa-bars text-xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- 移动端菜单 -->
+    <div class="md:hidden hidden bg-white shadow-lg absolute w-full" id="mobile-menu">
+        <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
+            <a href="../index.html" class="text-gray-700 hover:text-primary py-2 transition-custom">首页</a>
+            <a href="../index.html" class="text-gray-700 hover:text-primary py-2 transition-custom">关于湟源</a>
+            <a href="../index.html" class="text-gray-700 hover:text-primary py-2 transition-custom">联系我们</a>
+        </div>
+    </div>
+
+    <!-- 临时救助政策 -->
+    <section id="temporary-assistance" class="py-16 bg-white policy-section">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">临时救助政策</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">为遭遇突发事件、意外伤害等特殊困难家庭提供临时救助</p>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8 max-w-4xl mx-auto border border-gray-100">
+                <div class="space-y-8">
+                    <p class="text-gray-700 mb-6">临时救助是针对遭遇突发事件、意外伤害、重大疾病或其他特殊原因导致基本生活陷入困境，其他社会救助制度暂时无法覆盖或救助之后基本生活暂时仍有严重困难的家庭或个人给予的应急性、过渡性的救助。</p>
+                    
+                    <!-- 一、急难型救助对象 -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mr-2 flex-shrink-0">一</span>
+                            急难型救助对象
+                        </h4>
+                        <div class="pl-10">
+                            <p class="text-gray-700">因火灾、交通事故等意外事件，家庭成员突发重大疾病及遭遇其他特殊困难等原因，导致基本生活暂时出现严重困难、需要立即采取救助措施的家庭或个人。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 二、支出型救助对象 -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mr-2 flex-shrink-0">二</span>
+                            支出型救助对象
+                        </h4>
+                        <div class="pl-10">
+                            <p class="text-gray-700">指特困供养人员、最低生活保障家庭、最低生活保障边缘家庭、刚性支出困难家庭、孤儿、艾滋病儿童、事实无人抚养儿童、防止返贫监测对象和其他支出型救助对象，因病、因学、因住房等造成的支出，导致基本生活在一定时期内出现严重困难的家庭或个人。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 三、临时救助的方式 -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mr-2 flex-shrink-0">三</span>
+                            临时救助的方式
+                        </h4>
+                        <div class="pl-10">
+                            <p class="text-gray-700 mb-3">临时救助的方式包括：发放临时救助金、发放实物和提供转介服务。具体实施原则如下：</p>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2 pl-4">
+                                <li>以发放救助金为主，这是临时救助的主要方式，方便救助对象根据自身需求自主安排使用</li>
+                                <li>发放实物为辅，在救助对象因特殊情况无法自行购买基本生活必需品时提供</li>
+                                <li>提供转介服务为补充，对需要长期帮扶的对象，转介给相关部门提供持续帮扶</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- 特困人员救助供养政策 -->
+    <section id="special-needs" class="py-16 bg-white policy-section">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">特困人员救助供养政策</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">特困人员救助供养范围、标准及相关规定</p>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8 max-w-4xl mx-auto border border-gray-100">
+                <h3 class="text-2xl font-semibold text-dark mb-6 text-center">特困人员救助供养相关政策规定</h3>
+                
+                <div class="space-y-8">
+                    <!-- 一、特困人员救助供养范围 -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mr-2 flex-shrink-0">一</span>
+                            特困人员救助供养范围
+                        </h4>
+                        <div class="pl-10">
+                            <p class="text-gray-700 mb-4">具备以下条件的老年人、残疾人和未成年人，应当依法纳入特困人员救助供养范围:</p>
+                            <ol class="list-decimal list-inside text-gray-700 space-y-2 mb-4 pl-4">
+                                <li>无劳动能力;</li>
+                                <li>无生活来源;</li>
+                                <li>无法定赡养、抚养、扶养义务人或者其法定义务人无履行义务能力。</li>
+                            </ol>
+                            
+                            <p class="text-gray-700 font-medium mb-2">符合下列情形之一的，应当认定为本办法所称的无劳动能力:</p>
+                            <ol class="list-decimal list-inside text-gray-700 space-y-2 mb-4 pl-4">
+                                <li>60周岁以上的老年人;</li>
+                                <li>未满16周岁的未成年人;</li>
+                                <li>残疾等级为一、二、三级的智力、精神残疾人，残疾等级为一、二级的肢体残疾人，残疾等级为一、二级的视力残疾人；</li>
+                            </ol>
+                            
+                            <p class="text-gray-700 mb-4">收入低于当地最低生活保障标准，且财产符合当地特困人员财产状况规定的，应当认定为本办法所称的无生活来源。</p>
+                            
+                            <p class="text-gray-700 font-medium mb-2">法定义务人符合下列情形之一的，应当认定为本办法所称的无履行义务能力:</p>
+                            <ol class="list-decimal list-inside text-gray-700 space-y-2 pl-4">
+                                <li>已确定的特困人员;</li>
+                                <li>60周岁以上的最低生活保障对象;</li>
+                                <li>70周岁以上的老年人，本人收入低于当地上年人均可支配收入，且其财产符合当地低收入家庭财产状况规定的;</li>
+                                <li>重度残疾人和残疾等级为三级的智力、精神残疾人，本人收入低于当地上年人均可支配收入，且其财产符合低收入家庭财产状况规定的;</li>
+                                <li>无民事行为能力、被宣告失踪或者在监狱服刑的人员，且其财产符合当地低收入家庭财产状况规定的;</li>
+                                <li>长期患病，卧床1年以上，且家庭经济状况符合当地最低生活保障对象经济状况规定的。</li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+                    <!-- 二、特困供养人员救助供养的内容、标准和形式 -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mr-2 flex-shrink-0">二</span>
+                            特困供养人员救助供养的内容、标准和形式
+                        </h4>
+                        <div class="pl-10 space-y-4">
+                            <p class="text-gray-700"><span class="font-medium">（一）最低基本生活标准。</span>按各地当年城市最低生活保障标准的1.5倍确定，即1144.5元/月。</p>
+                            
+                            <p class="text-gray-700"><span class="font-medium">（二）最低照料护理标准。</span>部分丧失生活自理能力、完全丧失生活自理能力特困人员，分别按全省最低工资的30%、50%分档确定。</p>
+                            
+                            <p class="text-gray-700"><span class="font-medium">（三）办理丧葬事宜。</span>特困人员死亡后的丧葬事宜，集中供养的由供养服务机构办理，分散供养的由乡镇人民政府(街道办事处)委托村(牧、居)民委员会或者其亲属办理。特困人员死亡后一次性增发一年基本生活补助金的60%作为其丧葬费用。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 低保标准政策 -->
+    <section id="subsistence-allowance" class="py-16 bg-white policy-section">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">低保标准政策</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">省级乡村振兴重点帮扶县低保标准相关规定</p>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8 max-w-4xl mx-auto border border-gray-100">
+                <h3 class="text-2xl font-semibold text-dark mb-6 text-center">湟源县城乡居民最低生活保障标准</h3>
+                
+                <p class="text-gray-700 mb-8">根据相关政策规定，确定为省级乡村振兴重点帮扶县的大通县、湟源县，其城乡居民最低生活保障标准如下：</p>
+                
+                <div class="space-y-8">
+                    <!-- 一、分类保障标准 -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mr-2 flex-shrink-0">一</span>
+                            分类保障标准
+                        </h4>
+                        <div class="pl-10 space-y-4">
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <p class="font-medium text-gray-800">A类困难家庭</p>
+                                <p class="text-gray-700">按照5736元/人/年（478元/人/月）给予补助</p>
+                            </div>
+                            
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <p class="font-medium text-gray-800">B类困难家庭</p>
+                                <p class="text-gray-700">按照不低于5244元/人/年（437元/人/月）给予补助</p>
+                            </div>
+                            
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <p class="font-medium text-gray-800">C类困难家庭</p>
+                                <p class="text-gray-700">按照不低于3948元/人/年（329元/人/月）给予补助</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 二、分类施保政策 -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mr-2 flex-shrink-0">二</span>
+                            分类施保政策
+                        </h4>
+                        <div class="pl-10">
+                            <p class="text-gray-700">对城乡低保中的重度残疾人、重病患者、60岁以上老年人和18岁以下未成年人，按照城乡低保标准的15%落实分类施保资金，进一步提高保障水平，确保特殊困难群体基本生活得到有效保障。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
