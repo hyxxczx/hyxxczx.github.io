@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>就业帮扶车间- 二级页面</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .transition-custom {
+            transition: all 0.3s ease;
+        }
+        .text-primary {
+            color: #0d6efd;
+        }
+        .bg-primary {
+            background-color: #0d6efd;
+        }
+        .text-secondary {
+            color: #6c757d;
+        }
+        .text-dark {
+            color: #212529;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- 导航栏 -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fa fa-leaf text-secondary text-2xl"></i>
+                <h1 class="text-xl md:text-2xl font-bold text-dark">湟源县乡村振兴</h1>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="../index.html" class="text-gray-700 hover:text-primary transition-custom">首页</a>
+                <a href="../index.html" class="text-gray-700 hover:text-primary transition-custom">关于湟源</a>
+                <a href="../index.html" class="text-gray-700 hover:text-primary transition-custom">联系我们</a>
+            </nav>
+            <button class="md:hidden text-gray-700 focus:outline-none" id="mobile-menu-button">
+                <i class="fa fa-bars text-xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- 移动端菜单 -->
+    <div class="md:hidden hidden bg-white shadow-lg absolute w-full" id="mobile-menu">
+        <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
+            <a href="../index.html" class="text-gray-700 hover:text-primary py-2 transition-custom">首页</a>
+            <a href="../index.html" class="text-gray-700 hover:text-primary py-2 transition-custom">关于湟源</a>
+            <a href="../index.html" class="text-gray-700 hover:text-primary py-2 transition-custom">联系我们</a>
+        </div>
+    </div>
+
+    <!-- 就业帮扶车间 -->
+    <section id="bangfuchejian" class="py-16 bg-gray-50 policy-section">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">就业帮扶车间</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">湟源县就业帮扶车间认定、申报、奖补及管理办法</p>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8 max-w-5xl mx-auto border border-gray-10">
+                <h3 class="text-2xl font-semibold text-dark mb-8 text-center">湟源县就业帮扶车间</h3>
+
+                <div class="space-y-8">
+                    <!-- 一、申报范围及条件 -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mr-2 flex-shrink-0">一</span>
+                            申报范围及条件
+                        </h4>
+                        <div class="pl-10 space-y-4">
+                            <p class="text-gray-700"><span class="font-medium">（一）认定范围</span><br>就业帮扶车间(工坊)的认定范围从民族民间手工业、非遗传承工坊等生产经营主体，扩大到种养业合作社、餐饮业、冷链物流、加工制作、家政服务等生产经营主体。</p>
+                            <p class="text-gray-700"><span class="font-medium">（二）认定标准</span><br>1.有建设、运营产业车间(工坊)的经营主体，且有效运营2年以上；<br>2.经营主体持有独立自主的注册商标；<br>3.有建设产业车间(工坊)的必要场地和水电等基础条件，帮扶车间面积100㎡以上，工坊50㎡以上；<br>4.围绕稳岗就业，能有效吸纳农牧民就业：帮扶车间≥5人、工坊≥2人；签订3个月以上劳务合同；吸纳脱贫人口、监测对象比例≥10%或≥2人；<br>5.经营主体信用良好，无违法违规行为。</p>
+                        </div>
+                    </div>
+
+                    <!-- 二、申报流程 -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mr-2 flex-shrink-0">二</span>
+                            申报流程
+                        </h4>
+                        <div class="pl-10 space-y-4">
+                            <p class="text-gray-700"><span class="font-medium">（一）自主申报</span><br>经营主体向所在乡镇政府提出书面申请，提交：《就业帮扶车间认定申请表》、营业执照、法人身份证、征信证明、员工花名册、劳务协议、工资及社保凭证等。</p>
+                            <p class="text-gray-700"><span class="font-medium">（二）乡镇初审</span><br>5个工作日内实地核查，合格签署意见，报县农业农村局（乡村振兴办）。</p>
+                            <p class="text-gray-700"><span class="font-medium">（三）部门审核</span><br>县级审核、抽查；公示10个自然日；无异议后正式认定、授牌。</p>
+                        </div>
+                    </div>
+
+                    <!-- 三、激励措施 -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mr-2 flex-shrink-0">三</span>
+                            激励措施
+                        </h4>
+                        <div class="pl-10">
+                            <p class="text-gray-700">对认定车间按规模、带动就业、产值等综合因素，按青乡振局〔2021〕59号执行，奖补原则上不超过50万元，分档拨付；吸纳脱贫人口多、增收快的经营者，评先评优优先倾斜。</p>
+                        </div>
+                    </div>
+
+                    <!-- 四、监督管理 -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mr-2 flex-shrink-0">四</span>
+                            监督管理
+                        </h4>
+                        <div class="pl-10 space-y-4">
+                            <p class="text-gray-700"><span class="font-medium">（一）分级管理</span><br>• 小车间：稳定就业5人、年销100万以下 → 村+乡镇共管<br>• 中型：≥50人、年销100万以上 → 乡镇管理<br>• 大型：≥80人、年销1000万以上 → 县级管理</p>
+                            <p class="text-gray-700"><span class="font-medium">（二）动态管理</span><br>连续停产6个月以上、或用工不达标，及时清理、收回牌匾。</p>
+                        </div>
+                    </div>
+
+                    <!-- 附件：申请表 -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mr-2 flex-shrink-0">附件</span>
+                            湟源县就业帮扶车间认定申请表
+                        </h4>
+                        <div class="pl-10">
+                            <table class="w-full border-collapse border border-gray-300 text-gray-700">
+                                <tr>
+                                    <td class="border border-gray-300 p-2 w-1/4 font-medium">企业名称</td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2 w-1/4 font-medium">从事行业</td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 p-2 font-medium">法人代表</td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2 font-medium">联系电话</td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 p-2 font-medium">基本情况</td>
+                                    <td colspan="3" class="border border-gray-300 p-2 h-24"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" class="border border-gray-300 p-2 font-medium">认定标准及审核意见</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 p-2">运营满2年</td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2">有注册商标</td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 p-2">场地达标（≥100㎡）</td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2">用工人数达标</td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 p-2">脱贫/监测用工≥10%</td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2">信用良好</td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" class="border border-gray-300 p-2">认定意见：</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" class="border border-gray-300 p-2 h-16"></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // 移动端菜单切换
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
